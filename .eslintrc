@@ -1,0 +1,20 @@
+{
+  "extends": "airbnb-base",
+  "parser": "babel-eslint",//对import等高级语法按需加载做处理，要不然会报错
+  "env": {//eslint不认识window,navigator全局变量
+    "amd": true,
+    "es6": true,
+    "browser": true, //支持浏览器全局变量
+    "node": false   
+   },
+  "rules": {
+    //未定义的变量不能使用
+    "no-undef": 0,
+    //一行结束后面不要有空格
+    "no-trailing-spaces": 1,
+    //强制驼峰命名法
+    "camelcase": 2,
+    //不能使用console
+    "no-console": "off"
+  }
+}
